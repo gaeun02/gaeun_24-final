@@ -1,0 +1,1099 @@
+/* body 기본 설정 */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: auto; /* 가로 스크롤 허용 */
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+/* 가로 스크롤 컨테이너 */
+.scroll-container {
+  position: relative; /* 전체를 감싸는 컨테이너 */
+  width: 100vw; /* 화면 전체 너비 */
+  height: 100vh; /* 화면 전체 높이 */
+  overflow-x: auto; /* 가로 스크롤 허용 */
+  overflow-y: hidden; /* 세로 스크롤 방지 */
+  white-space: nowrap; /* 모든 콘텐츠가 가로로 나열 */
+}
+
+.poster-wrapper,
+.mondrian-frame {
+  display: inline-block; /* 나란히 배치되도록 설정 */
+  vertical-align: top; /* 위쪽에 정렬 */
+}
+
+/* 부모 컨테이너 설정 */
+.poster-wrapper {
+  width: 2180px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow-x: auto; /* 수평 스크롤 허용 */
+  overflow-y: hidden; /* 수직 스크롤 방지 */
+  white-space: nowrap;
+  background-color: rgb(255, 255, 255); /* 기본 배경 */
+}
+
+.Line {
+  width: 2180px;
+  height: 45px;
+  background-color: #000;
+  position: absolute;
+  top: 265px;
+  left: 0;
+  z-index: 100;
+}
+
+/* 제목 오른쪽 텍스트 이미지 위치 */
+.text1-wrapper {
+  position: absolute;
+  top: -135px; /* 제목의 상단과 맞춤 */
+  left: 630px; /* 오른쪽 여백 설정 */
+  z-index: 10; /* 다른 요소 위에 위치 */
+}
+
+.text1-wrapper img {
+  width: auto;
+  height: 390px; /* 적절한 높이 설정 */
+}
+
+/* 제목 오른쪽 텍스트 이미지 위치 */
+.text2-wrapper {
+  position: absolute;
+  top: 40px; /* 제목의 상단과 맞춤 */
+  left: 940px; /* 오른쪽 여백 설정 */
+  z-index: 10; /* 다른 요소 위에 위치 */
+}
+
+.text2-wrapper img {
+  width: auto;
+  height: 350px; /* 적절한 높이 설정 */
+}
+
+/* 제목 오른쪽 텍스트 이미지 위치 */
+.text3-wrapper {
+  position: absolute;
+  top: -240px; /* 제목의 상단과 맞춤 */
+  left: 1000px; /* 오른쪽 여백 설정 */
+  z-index: 10; /* 다른 요소 위에 위치 */
+}
+
+.text3-wrapper img {
+  width: auto;
+  height: 500px; /* 적절한 높이 설정 */
+}
+
+/* 제목 오른쪽 텍스트 이미지 위치 */
+.text4-wrapper {
+  position: absolute;
+  top: -140px; /* 제목의 상단과 맞춤 */
+  left: 1250px; /* 오른쪽 여백 설정 */
+  z-index: 10; /* 다른 요소 위에 위치 */
+}
+
+.text4-wrapper img {
+  width: auto;
+  height: 530px; /* 적절한 높이 설정 */
+}
+
+/* 제목 오른쪽 텍스트 이미지 위치 */
+.text5-wrapper {
+  position: absolute;
+  top: 0px; /* 제목의 상단과 맞춤 */
+  right: -10px; /* 오른쪽 여백 설정 */
+  z-index: 10; /* 다른 요소 위에 위치 */
+}
+
+.text5-wrapper img {
+  width: auto;
+  height: 300px; /* 적절한 높이 설정 */
+}
+
+/* 제목 오른쪽 텍스트 이미지 위치 */
+.text6-wrapper {
+  position: absolute;
+  top: -10px; /* 제목의 상단과 맞춤 */
+  right: -5px; /* 오른쪽 여백 설정 */
+  z-index: 10; /* 다른 요소 위에 위치 */
+}
+
+.text6-wrapper img {
+  width: auto;
+  height: 300px; /* 적절한 높이 설정 */
+}
+
+/* Title 이미지 상단 가운데 정렬 */
+.title-wrapper {
+  position: absolute;
+  top: -13%; /* 화면 상단에서 10% 위치에 정렬 */
+  left: 17%; /* 가로 중앙 */
+  transform: translateX(-50%); /* 정확한 중앙 정렬 */
+  z-index: 1000;
+}
+
+.title-image {
+  width: 785px; /* 이미지의 고정 너비 설정 */
+  max-width: 90%; /* 화면 폭보다 커지지 않도록 제한 */
+  height: auto; /* 비율 유지 */
+}
+
+.subtitle-container {
+  display: flex; /* Flexbox 활성화 */
+  justify-content: flex-start; /* 요소를 왼쪽 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  position: relative;
+  top: 268px; /* 부모 요소의 위치 */
+  left: 0px;
+  gap: 30px; /* 요소 간 간격 30px */
+  z-index: 100;
+}
+
+.subtitle-wrapper {
+  flex: 0 0 auto; /* 요소의 크기를 콘텐츠에 맞게 */
+}
+
+.subtitle-image {
+  width: 500px; /* 이미지의 고정 너비 설정 */
+  max-width: 80%; /* 반응형 설정 */
+  height: auto; /* 비율 유지 */
+}
+
+/* 그라데이션 공통 스타일 */
+.gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/* 순차적으로 나타나는 그라데이션 */
+.gradient1 {
+  background: linear-gradient(to bottom, #02040a, #1e4572);
+  animation: fadeInOut 100s infinite;
+  animation-delay: 10s;
+}
+
+.gradient2 {
+  background: linear-gradient(to bottom, #02040a, #1b1732, #221b7f);
+  animation: fadeInOut 100s infinite;
+  animation-delay: 20s;
+}
+
+.gradient3 {
+  background: linear-gradient(to bottom, #1b1732, #1e4572);
+  animation: fadeInOut 100s infinite;
+  animation-delay: 30s;
+}
+
+.gradient4 {
+  background: linear-gradient(to bottom, #4a3e63, #4b4064, #6a758d);
+  animation: fadeInOut 100s infinite;
+  animation-delay: 40s;
+}
+
+.gradient5 {
+  background: linear-gradient(to bottom, #6a558d, #b1d0e0);
+  animation: fadeInOut 100s infinite;
+  animation-delay: 50s;
+}
+
+.gradient6 {
+  background: linear-gradient(to bottom, #4593e7, #b1d0e0);
+  animation: fadeInOut 100s infinite;
+  animation-delay: 60s;
+}
+
+.gradient7 {
+  background: linear-gradient(to bottom, #00a4ff, #bce0ff);
+  animation: fadeInOut 100s infinite;
+  animation-delay: 70s;
+}
+
+.gradient8 {
+  background: linear-gradient(to bottom, #00bfff, #d3ffff);
+  animation: fadeInOut 100s infinite;
+  animation-delay: 80s;
+}
+
+.gradient9 {
+  background: linear-gradient(to bottom, #6e697d, #a8837d, #ff8d40);
+  animation: fadeInOut 100s infinite;
+  animation-delay: 90s;
+}
+
+.gradient10 {
+  background: linear-gradient(to bottom, #3f439d, #6e697d);
+  animation: fadeInOut 100s infinite;
+  animation-delay: 100s;
+}
+
+/* 새로운 Fade In/Out 애니메이션 */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 전체 요소 여백 제거 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* border와 padding 포함 */
+}
+
+/* Mondrian 프레임 */
+.mondrian-frame {
+  width: 2108px;
+  height: 460px;
+  position: absolute;
+  top: 39%;
+  left: 70%;
+  transform: translateX(-50%);
+  background-color: #000000; /* 기본 어두운 배경 */
+  box-sizing: border-box;
+  z-index: 1; /* 기본 틀의 z-index */
+}
+
+/* 확대될 때의 스타일 */
+.container.zoomed-in {
+  transform: scale(1.5); /* 1.5배 확대 */
+  transform-origin: var(--zoom-x) var(--zoom-y); /* 클릭한 지점을 기준으로 확대 */
+  transition: transform 0.5s ease-in-out; /* 부드러운 확대 전환 */
+}
+
+.container {
+  transition: transform 0.5s ease-in-out; /* 기본 전환 효과 */
+}
+
+/* container (마스크와 스포트라이트 포함) */
+.container {
+  position: absolute;
+  top: 0;
+  left: -2;
+  width: 100%;
+  height: 100%;
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 20%);
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 20%);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  transition: background-color 1s ease-in-out, z-index 1s ease-in-out;
+  z-index: 3; /* 초기 상태에서 가장 위에 위치 */
+}
+
+/* 낮 상태: 마스크와 스포트라이트 제거 */
+.container.daylight-on {
+  background-color: transparent; /* 어두운 배경 제거 */
+  mask-image: none !important; /* 마스크 이미지 제거 */
+  -webkit-mask-image: none !important;
+  transition: all 1s ease-in-out; /* 부드러운 전환 효과 */
+  z-index: 0; /* container를 뒤로 보냄 */
+}
+
+/* 낮 상태에서 모든 프레임 요소 보이기 */
+.container.daylight-on .div1,
+.container.daylight-on .div2,
+.container.daylight-on .div3,
+.container.daylight-on .div4,
+.container.daylight-on .div5,
+.container.daylight-on .div6,
+.container.daylight-on .div7,
+.container.daylight-on .div8,
+.container.daylight-on .div9,
+.container.daylight-on .div10,
+.container.daylight-on .div11,
+.container.daylight-on .div12,
+.container.daylight-on .div13,
+.container.daylight-on .div14,
+.container.daylight-on .div15,
+.container.daylight-on .div16,
+.container.daylight-on .div17,
+.container.daylight-on .div18,
+.container.daylight-on .div19,
+.container.daylight-on .div20,
+.container.daylight-on .div21,
+.container.daylight-on .div22,
+.container.daylight-on .div23,
+.container.daylight-on .div24,
+.container.daylight-on .div25,
+.container.daylight-on .div26,
+.container.daylight-on .div27,
+.container.daylight-on .div28,
+.container.daylight-on .div29,
+.container.daylight-on .div30,
+.container.daylight-on .div31,
+.container.daylight-on .div32,
+.container.daylight-on .div33,
+.container.daylight-on .div34,
+.container.daylight-on .div35,
+.container.daylight-on .div36,
+.container.daylight-on .div37,
+.container.daylight-on .div38,
+.container.daylight-on .div39,
+.container.daylight-on .div40,
+.container.daylight-on .div41,
+.container.daylight-on .div42,
+.container.daylight-on .div43,
+.container.daylight-on .div44,
+.container.daylight-on .div45,
+.container.daylight-on .div46,
+.container.daylight-on .div47,
+.container.daylight-on .div48 {
+  opacity: 1; /* 낮 상태에서 모든 요소가 보이도록 설정 */
+  transition: opacity 1s ease-in-out; /* 부드러운 페이드 인 효과 */
+}
+
+/* 사각형 공통 스타일 */
+.mondrian-frame div {
+  position: absolute;
+  border: 4.5px solid #000; /* border 대신 outline 사용 */
+  box-sizing: border-box;
+}
+
+div img {
+  width: 100%; /* 부모 div 크기에 맞춤 */
+  height: 100%; /* 비율 왜곡 방지 */
+  object-fit: cover; /* div를 꽉 채우되 비율을 유지 */
+}
+
+/* 1번 사각형 */
+.div1 {
+  width: 263.49px;
+  height: 94.56px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #fac901; /* 배경색 */
+  overflow: hidden; /* 부모 영역을 넘지 않도록 설정 */
+  box-sizing: border-box;
+}
+
+/* text1 이미지 스타일 */
+.text1 {
+  width: 100%; /* 부모 div1 너비에 꽉 맞춤 */
+  height: 100%; /* 부모 div1 높이에 맞춤 */
+  object-fit: cover; /* 비율 유지하며 div에 꽉 채우기 */
+  position: absolute; /* 부모 위치 기준 */
+  top: 0;
+  left: 0;
+}
+
+/* 2번 사각형 */
+.div2 {
+  width: 263.49px;
+  height: 178.89px;
+  top: 94.56px;
+  left: 0;
+  background-image: url("../2.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 3번 사각형 */
+.div3 {
+  width: 68.93px;
+  height: 124.75px;
+  top: 273.45px;
+  left: 0;
+  background-image: url("../3.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 4번 사각형 */
+.div4 {
+  width: 66.51px;
+  height: 64.75px;
+  top: 273.45px;
+  left: 68.93px;
+  background-image: url("../4.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 5번 사각형 */
+.div5 {
+  width: 66.51px;
+  height: 60px;
+  top: 338.2px;
+  left: 68.93px;
+  background-color: #dd0100;
+}
+
+/* 6번 사각형 */
+.div6 {
+  width: 135.43px;
+  height: 56px;
+  top: 397px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+/* 7번 사각형 */
+.div7 {
+  width: 178px;
+  height: 64.75px;
+  top: 273px;
+  left: 135px;
+  background-color: #ffffff;
+}
+
+/* text1 이미지 스타일 */
+.text7 {
+  width: 100%; /* 부모 div1 너비에 꽉 맞춤 */
+  height: 100%; /* 부모 div1 높이에 맞춤 */
+  object-fit: cover; /* 비율 유지하며 div에 꽉 채우기 */
+  position: absolute; /* 부모 위치 기준 */
+  top: 0;
+  left: 0;
+}
+
+/* 8번 사각형 */
+.div8 {
+  width: 125px;
+  height: 115px;
+  top: 337px;
+  left: 135px;
+  background-image: url("../8.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 9번 사각형 */
+.div9 {
+  width: 52.65px;
+  height: 115px;
+  top: 337px;
+  left: 259.62px;
+  background-color: #fac901;
+}
+
+/* 10번 사각형 */
+.div10 {
+  width: 295px;
+  height: 273.45px;
+  top: 0;
+  left: 263.49px;
+  background-image: url("../10.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 11번 사각형 */
+.div11 {
+  width: 245.87px;
+  height: 116px;
+  top: 273px;
+  left: 312.27px;
+  background-image: url("../11.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 12번 사각형 */
+.div12 {
+  width: 245.87px;
+  height: 65px;
+  top: 387px;
+  left: 312.27px;
+  background-color: #225095;
+}
+
+/* text12 이미지 스타일 */
+.text12 {
+  width: 100%; /* 부모 div1 너비에 꽉 맞춤 */
+  height: 100%; /* 부모 div1 높이에 맞춤 */
+  object-fit: cover; /* 비율 유지하며 div에 꽉 채우기 */
+  position: absolute; /* 부모 위치 기준 */
+  top: 0;
+  left: 0;
+}
+
+/* 13번 사각형 */
+.div13 {
+  width: 323.85px;
+  height: 100px;
+  top: 0px;
+  left: 558.14px;
+  background-image: url("../13.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 14번 사각형 */
+.div14 {
+  width: 323.85px;
+  height: 45px;
+  top: 100px;
+  left: 558.14px;
+  background-color: #dd0100;
+}
+
+.text14 {
+  width: 100%; /* 부모 div1 너비에 꽉 맞춤 */
+  height: 100%; /* 부모 div1 높이에 맞춤 */
+  object-fit: cover; /* 비율 유지하며 div에 꽉 채우기 */
+  position: absolute; /* 부모 위치 기준 */
+  top: 0;
+  left: 0;
+}
+
+/* 15번 사각형 */
+.div15 {
+  width: 131.62px;
+  height: 129px;
+  top: 144.74px;
+  left: 558.14px;
+  background-image: url("../15.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 16번 사각형 */
+.div16 {
+  width: 134px;
+  height: 180px;
+  top: 273px;
+  left: 557px;
+  background-image: url("../16.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 17번 사각형 */
+.div17 {
+  position: relative; /* 부모 요소 기준으로 자식 이미지 위치 설정 */
+  width: 191.74px;
+  height: 181.06px;
+  top: 144.74px;
+  left: 689.75px;
+  background-image: url("../17.png"); /* 배경 이미지 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden; /* 넘치는 이미지 잘림 방지 */
+}
+
+/* 첫 번째 이미지 */
+.art1 {
+  position: absolute; /* 부모(.div17)를 기준으로 위치 설정 */
+  top: 0;
+  left: 0;
+  width: 100%; /* 부모 요소의 크기와 동일하게 맞춤 */
+  height: 100%;
+  opacity: 1;
+}
+
+/* 두 번째 이미지 */
+.art2 {
+  position: absolute; /* 부모(.div17)를 기준으로 위치 설정 */
+  top: 0;
+  left: 0;
+  width: 100%; /* 부모 요소의 크기와 동일하게 맞춤 */
+  height: 100%;
+  opacity: 1; /* 필요하면 투명도 조절 가능 */
+}
+
+/* 18번 사각형 */
+.div18 {
+  width: 191.74px;
+  height: 126.71px;
+  top: 325.79px;
+  left: 689.75px;
+  background-image: url("../18.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.div19 {
+  width: 168px;
+  height: 145px;
+  top: 0px;
+  left: 880px;
+  background-image: url("../19.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.div20 {
+  width: 120px;
+  height: 145px;
+  top: 0px;
+  left: 1041px;
+}
+
+.text20 {
+  width: 100%; /* 부모 div1 너비에 꽉 맞춤 */
+  height: 100%; /* 부모 div1 높이에 맞춤 */
+  object-fit: cover; /* 비율 유지하며 div에 꽉 채우기 */
+  position: absolute; /* 부모 위치 기준 */
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.div21 {
+  width: 134px;
+  height: 181.06px;
+  top: 144.74px;
+  left: 880px;
+  background-image: url("../21.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 22번 사각형 */
+.div22 {
+  width: 149.22px;
+  height: 87.27px;
+  top: 144.74px;
+  left: 1012px;
+  background-image: url("../22.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 23번 사각형 */
+.div23 {
+  width: 100px;
+  height: 93.79px;
+  top: 232px;
+  left: 1012px;
+  background-image: url("../23.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.div24 {
+  width: 50px;
+  height: 93.79px;
+  top: 232px;
+  left: 1111px;
+  background-color: #225095;
+}
+
+/* 25번 사각형 */
+.div25 {
+  width: 134px;
+  height: 126.71px;
+  top: 325.79px;
+  left: 880px;
+  background-color: #ffffff;
+}
+
+.text25 {
+  width: 100%; /* 부모 div1 너비에 꽉 맞춤 */
+  height: 100%; /* 부모 div1 높이에 맞춤 */
+  object-fit: cover; /* 비율 유지하며 div에 꽉 채우기 */
+  position: absolute; /* 부모 위치 기준 */
+  top: 0;
+  left: 0;
+}
+
+.div26 {
+  width: 298px;
+  height: 126.71px;
+  top: 325.79px;
+  left: 1012px;
+  background-image: url("../26.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 27번 사각형 */
+.div27 {
+  width: 150px;
+  height: 72.5px;
+  top: 0;
+  left: 1160px;
+  background-image: url("../27.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.div28 {
+  width: 150px;
+  height: 72.5px;
+  top: 72;
+  left: 1160px;
+  background-image: url("../28.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 29번 사각형 */
+.div29 {
+  width: 150px;
+  height: 183px;
+  top: 144;
+  left: 1160px;
+  background-image: url("../29.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 30번 사각형 */
+.div30 {
+  width: 157px;
+  height: 147px;
+  top: 0;
+  left: 1308px;
+  background-image: url("../30.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.div31 {
+  width: 42.18px;
+  height: 147px;
+  top: 0;
+  left: 1462.46px;
+  background-color: #ffffff;
+}
+
+.text31 {
+  width: 100%; /* 부모 div1 너비에 꽉 맞춤 */
+  height: 100%; /* 부모 div1 높이에 맞춤 */
+  object-fit: cover; /* 비율 유지하며 div에 꽉 채우기 */
+  position: absolute; /* 부모 위치 기준 */
+  top: 0;
+  left: 0;
+}
+
+.div32 {
+  width: 157px;
+  height: 72.5px;
+  top: 144;
+  left: 1308px;
+  background-color: #dd0100;
+}
+
+.div33 {
+  width: 157px;
+  height: 72.5px;
+  top: 210;
+  left: 1308px;
+  background-image: url("../33.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.div34 {
+  width: 42.18px;
+  height: 138.5px;
+  top: 144;
+  left: 1462.46px;
+  background-color: #fac901;
+}
+
+.div35 {
+  width: 200px;
+  height: 172px;
+  top: 280;
+  left: 1306px;
+  background-image: url("../35.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.div36 {
+  width: 258px;
+  height: 255px;
+  top: 0px;
+  left: 1503px;
+  background-image: url("../36.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.div37 {
+  width: 175px;
+  height: 68.43px;
+  top: 253px;
+  left: 1504.64px;
+  background-color: #ffffff;
+}
+
+.text37 {
+  width: 100%; /* 부모 div1 너비에 꽉 맞춤 */
+  height: 100%; /* 부모 div1 높이에 맞춤 */
+  object-fit: cover; /* 비율 유지하며 div에 꽉 채우기 */
+  position: absolute; /* 부모 위치 기준 */
+  top: 0;
+  left: 0;
+}
+
+.div38 {
+  width: 175px;
+  height: 135px;
+  top: 318;
+  left: 1504px;
+  background-image: url("../38.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 34번 사각형 */
+.div39 {
+  width: 82.53px;
+  height: 199px;
+  top: 254px;
+  left: 1676.46px;
+  background-color: #dd0100;
+}
+
+.div40 {
+  width: 53.24px;
+  height: 255px;
+  top: 0px;
+  left: 1758.99px;
+  background-color: #225095;
+}
+
+/* 35번 사각형 */
+.div41 {
+  width: 172px;
+  height: 167.83px;
+  top: 0px;
+  left: 1810px;
+  background-image: url("../41.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 36번 사각형 */
+.div42 {
+  width: 172px;
+  height: 90px;
+  top: 165px;
+  left: 1810px;
+  background-image: url("../42.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.div43 {
+  width: 225px;
+  height: 200px;
+  top: 253px;
+  left: 1758px;
+  background-image: url("../43.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.div44 {
+  width: 122px;
+  height: 167.83px;
+  top: 0px;
+  left: 1980px;
+  background-image: url("../44.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.div45 {
+  width: 122px;
+  height: 90px;
+  top: 165px;
+  left: 1980px;
+  background-color: #ffffff;
+}
+
+.text45 {
+  width: 100%; /* 부모 div1 너비에 꽉 맞춤 */
+  height: 100%; /* 부모 div1 높이에 맞춤 */
+  object-fit: cover; /* 비율 유지하며 div에 꽉 채우기 */
+  position: absolute; /* 부모 위치 기준 */
+  top: 0;
+  left: 0;
+}
+
+.div46 {
+  width: 122px;
+  height: 127px;
+  top: 253px;
+  left: 1980px;
+  background-image: url("../46.png"); /* 상대 경로 수정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.div47 {
+  width: 74px;
+  height: 75.05px;
+  top: 377.45px;
+  left: 1981.2px;
+  background-color: #fac901;
+}
+
+.text47 {
+  width: 100%; /* 부모 div1 너비에 꽉 맞춤 */
+  height: 100%; /* 부모 div1 높이에 맞춤 */
+  object-fit: cover; /* 비율 유지하며 div에 꽉 채우기 */
+  position: absolute; /* 부모 위치 기준 */
+  top: 0;
+  left: 0;
+}
+
+.div48 {
+  width: 48.07px;
+  height: 75.05px;
+  top: 377.45px;
+  left: 2054.43px;
+  background-color: #dd0100;
+}
+
+/* 초기 숨김 상태 */
+.container img {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* 랜덤 힌트 애니메이션 */
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+.fade-in-out {
+  animation: fadeInOut 3s infinite;
+}
+
+@keyframes scalePulse {
+  0%,
+  100% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+.scale-pulse {
+  animation: scalePulse 3s infinite;
+}
+
+@keyframes shakeHint {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25%,
+  75% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+}
+.shake-hint {
+  animation: shakeHint 3s infinite;
+}
+
+.hover-effect {
+  transform: scale(1.1) rotate(1deg);
+  transition: transform 0.3s ease;
+}
+
+/* 클릭 시 반짝반짝 효과 */
+@keyframes brightBlink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+.found-effect {
+  animation: brightBlink 0.3s ease-in-out 2;
+}
+
+/* 마스크 걷힐 때 전체 등장 */
+.daylight-on img {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* 문구 이미지: 천천히 왼쪽에서 등장 */
+@keyframes slowSlideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.text-slide-in {
+  animation: slowSlideInFromLeft 3s ease-out forwards; /* 3초 동안 등장 */
+  opacity: 0; /* 초기 상태: 숨김 */
+}
+
+/* 일반 이미지: 천천히 페이드 인 */
+@keyframes slowFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9); /* 작게 시작 */
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.slow-fade-in {
+  animation: slowFadeIn 3s ease-in-out forwards; /* 3초 동안 등장 */
+  opacity: 0; /* 초기 상태 */
+}
